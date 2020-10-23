@@ -81,6 +81,9 @@ header .main .wrap .menu > ul > li > div > ul {
   text-align: right;
   padding: 0 10px;
 }
+header .main .wrap .menu > ul > li:nth-child(1) > div > ul{text-align: center;}
+header .main .wrap .menu > ul > li:nth-child(2) > div > ul{
+  text-align:center; padding-left: 180px;}
 
 header .main .wrap .menu > ul > li > div > ul > li {
   display: inline-block;
@@ -104,7 +107,7 @@ main {
   background-position: 50% 100%;
 }
 
-#bottom_btn { padding:10px 0; background-color: #d3dce5;}
+#bottom_btn { padding:20px 0; background-color: #d3dce5;}
 #bottom_btn .wrap {width: 1200px; font-size: 0; margin: 0 auto;}
 #bottom_btn .wrap ul{}
 #bottom_btn .wrap ul li { 
@@ -113,356 +116,273 @@ main {
   display: inline-block;
   vertical-align: top;
 }
-
-/* 중간메뉴 위 */
-.rec_menu_1 {
-  background-color: #efedef; height: 320px;
-}
-.rec_menu_1 div {width:1200px; margin: 0 auto;}
-.rec_menu_1 div ul {padding-top:20px;}
-.rec_menu_1 div ul li {
-  width:280px; height: 280px;
-  float:left;
-  margin: 0 10px;
-  padding-top: 20px;
-  position: relative;
-}
-.rec_menu_1 div ul li:first-child {background-color: #004ea1;}
-.rec_menu_1 div ul li:nth-child(2) {background-color: #03d365;}
-.rec_menu_1 div ul li:last-child {
-  width:580px;
-  background-image: url(../img/cont-001.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-}
-.rec_menu_1 div ul .mini {color:#fff;}
-.rec_menu_1 div ul > .mini > h3 {font-size: 36px; padding: 0 20px;}
-.rec_menu_1 div ul > .mini > p {
-  font-size: 16px; 
-  padding: 30px 20px 0;}
-
-.rec_menu_1 div ul > .mini > .in_text01 {
- position: absolute;
- bottom:20px;
- margin-left:20px;
- width:240px;
- height:40px;
- border:2px solid #fff;
-}
-.rec_menu_1 div ul > .mini > .in_text01 a {
-  display: inline-block;
-  text-align: center;
-  line-height: 40px;
-  color:#fff;
-  border-left:2px solid #fff;
-}
-.rec_menu_1 div ul > .mini > .in_text01 a:first-child { border:none;}
-.rec_menu_1 div ul > .mini > .in_text01 a > p {padding:0 20px;}
-.rec_menu_1 div ul > .mini > .in_text01 a > p:first-child {padding-left:25px;}
-
-.rec_menu_1 div ul > .mini > .in_text02 {
-  position: absolute;
-  bottom:20px;
-  margin-left:20px;
-  width:240px;
-  height:40px;
-  border:2px solid #fff;
- }
- .rec_menu_1 div ul > .mini > .in_text02 a {
-   display: inline-block;
-   text-align: center;
-   line-height: 40px;
-   color:#fff;
-   border-left:2px solid #fff;
- }
- .rec_menu_1 div ul > .mini > .in_text02 a:first-child { border:none;}
- .rec_menu_1 div ul > .mini > .in_text02 a > p {padding:0 20px;}
-
-.bgmini h3 {font-size: 36px; padding: 0 20px; font-weight: bold;}
-.bgmini p {font-size: 16px; padding: 0 20px;}
-
-.bgmini .search {
-  position: absolute;
-  left:0;
-  bottom:20px;
-  border:2px solid #004ea1;
-  width:240px;
-  height:40px;
-  background-color: #fff;
-  margin-left:20px;
-}
-.bgmini .secrch .search_box input {
-  display:inline-block;
-  height:40px;
-  font-size: 18px;
-  border:none;
-  background-color:transparent;
-  outline:none;
-}
-.bgmini .secrch .search_box a {
-  display: inline-block;
-  width:240px;
-  line-height: 40px;
-  font-size: 18px;
-}
-
-.bgmini button { 
-  position: absolute;
-  left:240px;
-  bottom:20px;
-  width:120px;
-  height:40px;
-  background-color: #004ea1;
-  border:none;
-  color:#fff;
-  font-size: 16px;
-}
+#bottom_btn .wrap ul li a {display: block;}
+#bottom_btn .wrap ul li a img {display: block; width: 100%;}
 
 
- /* 중간메뉴 아래 */
 
-.rec_menu_2 {background-color: #efedef; height: 320px;}
-.rec_menu_2 div {width:1200px; height: 280px; margin: 0 auto;}
-.rec_menu_2 div > ul {padding-top:20px;}
-.rec_menu_2 div > ul .mini {
-  width:280px; height: 280px;
-  float:left;
-  margin: 0 10px;
-  padding-top: 20px;
-  position: relative;
-}
-
-.rec_menu_2 > div > ul > li:nth-child(2) {background-color: #004ea1;}
-.rec_menu_2 > div > ul > li:nth-child(3) {background-color: #03d365;}
-.rec_menu_2 > div > ul > .bgmini2 {
-  width:580px;
+#cont1{ background-color: #efedef;}
+#cont1 .wrap{
+  width: 1200px; height:auto; 
+  margin:0 auto; font-size: 0; padding-top: 20px;}
+#cont1 .wrap article {
+  width:calc(25% - 20px);
   height: 280px;
-  background-color: #fff;
-  float:left;
-  position: relative;
-}
-.rec_menu_2 > div > ul .bgmini2 img { 
-  width:240px;
-  height:240px; 
-  float:left;
-  padding:15px 20px 20px;
-}
-.rec_menu_2 > div > ul .bgmini2 h3 { 
+  margin:0 10px 20px;
   display: inline-block;
-  font-size: 36px;
-  padding:20px 20px 0;
-  font-weight: bold;
+  vertical-align: top;
+  background-color: #004ea1;
+  background-size:cover;
+  background-position: 50% 50%;
+  padding:20px;
 }
-.rec_menu_2 > div > ul .bgmini2 p { 
-  display: inline-block;
-  font-size:14px;
-  padding:40px 20px 0;
+
+#cont1 .wrap article:nth-child(2n){background-color: #03d365;}
+#cont1 .wrap article:nth-child(3) { width: calc(50% - 20px); background-image: url(../img/cont-001.jpg); background-repeat:no-repeat;}
+#cont1 .wrap article:nth-child(4) { width: calc(50% - 20px); background-color: #fff;}
+
+#cont1 .wrap article .in_box {width: 100%; height: 100%; position: relative;}
+#cont1 .wrap article .in_box h3 {font-size: 36px; color:#fff; line-height: 1;}
+#cont1 .wrap article .in_box p {
+  font-size: 18px; 
+  color:#fff; 
+  padding-top: 30px;
+  word-break: keep-all; 
+  /* 한글, 일문, 중문 캐릭터의 특징은 개별적인 글자를 통해 조합하려는 경향이 있기 때문에 '단어'를 기준으로 단어영역을 묻고자 할 때 사용. ex.수-수료 10% */
 }
-.bgmini2 button {
+
+#cont1 .wrap article .in_box ul { 
   position: absolute;
-  bottom:20px;
-  right:20px;
-  height:36px;
-  border:2px solid #004ea1;
-  background-color: #e5e5e5;
-}
-.bgmini2 button a {color:#004ea1; font-weight: bold;}
-
-.rec_menu_2 > div > ul .mini {color:#fff;}
-.rec_menu_2 > div > ul .mini > h3 {font-size: 36px; padding: 0 20px;}
-.rec_menu_2 > div > ul .mini > p {
-  font-size: 16px; 
-  padding: 30px 20px 0;}
-
-.rec_menu_2 > div > ul .mini > .in_text03 {
- position: absolute;
- bottom:20px;
- margin-left:20px;
- width:240px;
- height:40px;
- border:2px solid #fff;
-}
-.rec_menu_2 > div > ul .mini .in_text03 a {
-  display: inline-block;
-  text-align: center;
-  line-height: 40px;
-  color:#fff;
+  width: 100%; height: 40px;
+  bottom:0;
+  left:0;
+  border-top:2px solid #fff;
   border-left:2px solid #fff;
 }
-.rec_menu_2 > div > ul .mini .in_text03 a:first-child { border:none;}
-.rec_menu_2 > div > ul .mini .in_text03 a p {padding:0 30px;}
-.rec_menu_2 > div > ul .mini .in_text03 a p:first-child {padding-left: 30px;}
-.rec_menu_2 > div > ul .mini .in_text03 a p:last-child{
-  padding-left:35px;
-}
-
-.rec_menu_2 > div > ul .mini .in_text04 {
-  position: absolute;
-  bottom:20px;
-  margin-left:20px;
-  width:240px;
-  height:40px;
-  border:2px solid #fff;
- }
- .rec_menu_2 > div > ul .mini .in_text04 a {
-   display: inline-block;
-   text-align: center;
-   line-height: 40px;
-   color:#fff;
-   border-left:2px solid #fff;
- }
- .rec_menu_2 > div > ul .mini .in_text04 a:first-child { border:none;}
- .rec_menu_2 > div > ul .mini .in_text04 a > p {padding:0 10px;}
- .rec_menu_2 > div > ul .mini .in_text04 a p:last-child{
-  padding-left:20px;
-}
-.rec_menu_1 div ul > .mini > .in_text01 a:hover, .rec_menu_1 div ul > .mini > .in_text02 a:hover, .rec_menu_2 div ul > .mini > .in_text03 a:hover, .rec_menu_2 div ul > .mini > .in_text04 a:hover {
-  background-color:rgba(255,255,255,0.5);
-}
-
-
-/* 중간 이미지 */
-.health_care {
-  position: relative;
-  height: 465px;
-  background-image: url(../img/health-care.jpg);
-  background-size: cover;
-  background-position: 50% 100%;
-}
-.health_care p {
-  position: absolute;
-  right:140px;
-  bottom:220px;
-  font-size:36px;
-  font-weight: bold;
-  text-align: center;
-}
-.health_care img {
-  height: 65px;
-  position: absolute;
-  right:200px;
-  bottom:105px;
-}
-
-/* 건강정보 */
-.health_info { width:100%; height: 555px;}
-.health_info .wrap {width:1200px; height: 100%; margin:0 auto;}
-.health_info > .wrap > h2 {
-  text-align: center; 
-  margin-top:30px; 
-  font-size: 36px; 
-  font-weight: bold;}
-.health_info > .wrap > p {
-  text-align: center;
-  font-size: 20px;
-  margin-top: 30px;
-}
-
-.health_info > .wrap > ul {}
-.health_info > .wrap > ul > li {
-  float:left;
-  width:280px;
-  height: 375px;
-  margin-top:20px;
-}
-.health_info > .wrap > ul > li:first-child {
-  background-image: url(../img/cont-002.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;}
-.health_info > .wrap > ul > li:nth-child(2) {
-  background-image: url(../img/cont-003.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;}
-.health_info > .wrap > ul > li:nth-child(3) {
-  background-image: url(../img/cont-004.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;}
-.health_info > .wrap > ul > li:last-child {
-  background-image: url(../img/cont-005.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;}
-
-.health_info > .wrap > ul > li > a > h3 {
-  text-align: center;
-  padding-top:55px;
-  color: #fff;
-}
-.health_info > .wrap > ul > li > a > span {
-  display: block;
-  box-sizing:border-box;
-  width:80px;
-  height:3px;
-  border-radius:10px;
-  margin-top:15px;
-  margin-left:100px;
+#cont1 .wrap article .in_box ul li {
+  display: inline-block;
+  width:50%;
+  border-right:2px solid #fff;
   border-bottom:2px solid #fff;
 }
-.health_info > .wrap > ul > li > a > p {
+#cont1 .wrap article .in_box ul li a {
+  display: block;
+  line-height: 36px;
+  font-size: 18px;
+  color:#fff;
   text-align: center;
-  margin-top:20px;
-  color:#fff;
 }
 
-.sns {
-  display: block;
-  line-height:2.4;
-  margin:25px 30%;
-  height:160px;
-  width:120px;
-  border:2px solid #fff;
+#cont1 .wrap article .in_box ul li:hover a { 
+  background-color:rgba(255,255,255,0.4);
+  transition: background-color 0.5s;
 }
-.sns a {
-  display: block;
-  color:#fff;
-  padding-left:20px;
+#cont1 .wrap article .in_box h3.black {color:#363636;}
+/* 명시도 고려! */
+#cont1 .wrap article .in_box .black {color:#363636;}
+
+#cont1 .wrap article .in_box .search_box {
+  position: absolute; left:0; bottom:0;
+  width: 360px; height: 40px;
 }
-
-/* footer  */
-footer { 
-  height:245px; 
-  background-color: #474747; 
-  position: relative;}
-
-
-footer .wrap {width: 1200px; margin: 0 auto;}
-footer .wrap ul {text-align: center;}
-footer .wrap ul li {
+#cont1 .wrap article .in_box .search_box input {
   display: inline-block;
-  margin-top:20px;}
+  border:2px solid #004ea1;
+  width: calc(100% - 120px);
+  height: 40px;
+  font-size: 18px;
+  padding: 0 10px;
+  vertical-align: top;
+}
+#cont1 .wrap article .in_box .search_box button {
+  width: 120px; height: 40px;
+  display: inline-block;
+  background-color: #004ea1;
+  color:#fff;
+  font-size: 18px;
+  border:none;
+  vertical-align: top;
+  cursor: pointer;
+}
+#cont1 .wrap article:nth-child(4) .in_box .prize_img {
+  display: inline-block;
+  vertical-align: top;
+  width: 240px; height: 100%;
+  background-image: url(../img/prize.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+#cont1 .wrap article:nth-child(4) .in_box .prize_text {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 260px);
+  height: 100%;
+  margin-left:20px;
+}
+#cont1 .wrap article:nth-child(4) .in_box .prize_text .black {color:#363636;}
+#cont1 .wrap article:nth-child(4) .in_box .prize_text p { 
+  font-size: 14px;
+  word-break: keep-all;
+}
 
-footer .wrap ul li p {
-  color:#fff; 
-  font-size:13px;
-  float:left;
-  border-left:1px solid #fff;
-  padding:0 10px;
-}
-footer .wrap ul li:first-child p {
-  padding-left:0;
-  border:0;
-}
-footer .wrap span {
-  display: block;
-  width:1200px; height:15px;
-  box-sizing:border-box;  
-  border-bottom:1px solid #fff;
-  margin:15px 0;
-}
-
-footer .wrap address {
-  display: block;
-  color:#5b5b5b; 
-  font-style:normal; 
-  font-size:13px;
-  text-align: center;
-  margin-top:15px;
-}
-
-footer .bottom a {display: block;}
-footer .bottom a img {
-  height: 55px; 
+#cont1 .wrap article:nth-child(4) .in_box .prize_text a { 
   position: absolute;
-  bottom:55px;
-  left:50%;
+  right: 0; bottom:0;
+  height:40px;
+  width: 160px;
+  border:2px solid #004ea1;
+  line-height: 36px;
+  text-align: center;
+  background-color: #e5e5e5;
+  color:#004ea1;
+  font-size: 18px;
+  transition: background-color 0.5s;
 }
+
+#cont1 .wrap article:nth-child(4) .in_box .prize_text a:hover {background-color: #c5c5c5;}
+
+#banner_01 {
+  width: 100%; height: 464px;
+  background-image: url(../img/health-care.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+#banner_01 .wrap {width: 1200px; height: 100%; margin: 0 auto; position: relative;}
+#banner_01 .wrap .banner_cont {
+  position: absolute;
+  width: 340px;
+  top:50%; right:150px;
+  transform: translateY(-50%);
+  text-align: center;
+}
+#banner_01 .wrap .banner_cont h2 { font-size: 36px; color:#363636; padding-bottom: 50px; padding-top: 20px;}
+#banner_01 .wrap .banner_cont img {width: 180px;}
+
+#cont2 {}
+#cont2 .wrap {width: 1200px; margin: 0 auto; padding: 20px 0; text-align: center;}
+#cont2 .wrap .sec_title {}
+#cont2 .wrap .sec_title h3 {font-size: 36px; line-height: 60px; color: #363636;}
+#cont2 .wrap .sec_title p {font-size: 20px; padding: 20px 0; line-height: 1; color:#363636;}
+
+#cont2 .wrap .sec_cont {font-size: 0;}
+#cont2 .wrap .sec_cont .cont_box {
+  display: inline-block; 
+  width: calc(25% - 20px); 
+  margin: 0 10px 20px;
+  height: 375px;
+  background-size: cover;
+  background-position: 50% 50%;
+  padding: 20px;
+  vertical-align:top;
+}
+
+#cont2 .wrap .sec_cont .cont_box:nth-child(1){background-image: url(../img/cont-002.jpg);}
+#cont2 .wrap .sec_cont .cont_box:nth-child(2){background-image: url(../img/cont-003.jpg);}
+#cont2 .wrap .sec_cont .cont_box:nth-child(3){background-image: url(../img/cont-004.jpg);}
+#cont2 .wrap .sec_cont .cont_box:nth-child(4){background-image: url(../img/cont-005.jpg);}
+
+#cont2 .wrap .sec_cont .cont_box h4 {
+  font-size: 24px; color:#fff; 
+  padding-bottom: 20px;
+  padding-top: 40px;
+}
+#cont2 .wrap .sec_cont .cont_box .bar {
+  width: 80px; height: 4px; 
+  background-color: #fff;
+  /* margin: 0 auto; */
+  display: inline-block;
+}
+/* 일정공간(width값이 존재하고 height가 존재할 때) 을 가로방향으로 가운데 배치하는 방법
+  display:block; 인 경우, 본인에게 margin: 0 auto; 를 선언
+  display:inline-block; 인 경우, 부모에게 text-align:center 를 선언 
+ */
+
+#cont2 .wrap .sec_cont .cont_box p {
+  font-size: 18px; color:#fff; 
+  padding:20px;
+  word-break: keep-all; 
+}
+#cont2 .wrap .sec_cont .cont_box:last-child p { padding: 20px 0;}
+/* 떨어지는 이유) 가로 배치를 위해 사용한 inline-block 때문. 사용한 곳(#cont2 .wrap .sec_cont .cont_box) 에 vertical-align:top을 해줘야 */
+
+#cont2 .wrap .sec_cont .cont_box ul {
+  width: 120px; 
+  margin:0 auto; 
+  border:2px solid #fff;
+  border-bottom:none;
+}
+#cont2 .wrap .sec_cont .cont_box ul li {}
+#cont2 .wrap .sec_cont .cont_box ul li a {
+  display: block;
+  line-height: 38px; 
+  border-bottom:2px solid #fff;
+  font-size: 18px;
+  color:#fff;
+}
+
+#cont2 .wrap .sec_cont .cont_box ul li:hover a {
+  background-color: rgba(255,255,255,0.4);
+  transition:background 0.5s;
+}
+
+
+footer {padding: 20px 0; background-color: #474747; text-align: center; font-size: 0;}
+footer .wrap {width: 1200px; margin: 0 auto;}
+footer .wrap .footer_top {padding-bottom: 20px;}
+footer .wrap .footer_top ul { border-bottom:1px solid #fff; padding-bottom: 20px;}
+footer .wrap .footer_top ul li { display: inline-block;}
+footer .wrap .footer_top ul li p { 
+  line-height: 1; 
+  color:#fff; 
+  padding:0 10px;
+  border-right:1px solid #fff;
+  font-size: 14px;
+}
+footer .wrap .footer_top ul li:last-child p { border-right:none;} 
+
+footer .wrap .footer_link {}
+footer .wrap .footer_link ul {}
+footer .wrap .footer_link ul li {display: inline-block;}
+footer .wrap .footer_link ul li a {
+  display: block; 
+  font-size: 14px; 
+  color:#fff;
+  padding: 0 5px;
+  line-height: 1;
+  border-right:1px solid #fff;
+}
+footer .wrap .footer_link ul li:last-child a {border:none;}
+
+footer .wrap .footer_main { padding-top: 20px;}
+footer .wrap .footer_main .general {font-size: 14px; color:#fff; padding-bottom: 20px;}
+footer .wrap .footer_main img {height: 55px;}
+footer .wrap .footer_main .copyright {font-size: 14px; color:#fff; padding-top: 20px;}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:767px){
+  .responsive_768_down_dnone {display: none;}
+}
+
+/* #test {padding:20px 0; background-color: #aaffff;}
+
+#test img {
+display: inline-block;
+vertical-align: baseline;}
+#test span {
+  display: inline-block;
+  vertical-align: middle;
+} 
+*verticla-align 선언시, 상대의 위치를 조정. 강제로 부여된 마진과 패딩은 수직방향의 위치조정 없이, 형제요소를 함께 내려버리는 역할을 하기 때문에 부여하지 말 것!!
+*/
+
